@@ -1,0 +1,221 @@
+// 公共页面样式
+.post-container,
+.comment-container,
+.category-container,
+.notice-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* 页面头部 */
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.header-text h2 {
+  margin: 0 0 8px 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header-text p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+/* 统计卡片 */
+.stats-row {
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card-primary:hover {
+  border-color: #42a5f5;
+}
+
+.stat-card-success:hover {
+  border-color: #67c23a;
+}
+
+.stat-card-warning:hover {
+  border-color: #e6a23c;
+}
+
+.stat-card-info:hover {
+  border-color: #909399;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.stat-card-primary .stat-icon {
+  background: linear-gradient(135deg, #42a5f5 0%, #2196f3 100%);
+}
+
+.stat-card-success .stat-icon {
+  background: linear-gradient(135deg, #67c23a 0%, #85ce61 100%);
+}
+
+.stat-card-warning .stat-icon {
+  background: linear-gradient(135deg, #e6a23c 0%, #f56c6c 100%);
+}
+
+.stat-card-info .stat-icon {
+  background: linear-gradient(135deg, #909399 0%, #b3b6bb 100%);
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #303133;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #909399;
+}
+
+/* 搜索卡片 */
+.search-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #303133;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.search-header .el-icon {
+  color: #42a5f5;
+  font-size: 20px;
+}
+
+.search-form {
+  margin: 0;
+}
+
+.search-form :deep(.el-form-item) {
+  margin-bottom: 0;
+}
+
+/* 表格卡片 */
+.table-card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+:deep(.el-table) {
+  .el-table__header {
+    th {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+  }
+  
+  .el-table__body tr {
+    transition: all 0.3s;
+  }
+  
+  .el-table__body tr:hover {
+    background: #f5f7fa !important;
+  }
+}
+
+/* 对话框样式 */
+:deep(.el-dialog) {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+:deep(.el-dialog__header) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px 30px;
+  margin: 0;
+}
+
+:deep(.el-dialog__title) {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+:deep(.el-dialog__headerbtn .el-dialog__close) {
+  color: #fff;
+  font-size: 22px;
+}
+
+:deep(.el-dialog__body) {
+  padding: 30px;
+}
